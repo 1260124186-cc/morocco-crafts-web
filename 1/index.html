@@ -25,12 +25,17 @@
                 </nav>
                 <div class="user-actions">
                     <button class="btn btn-primary">
-                        <i class="fas fa-shopping-cart"></i> 购物车
+                        <i class="fas fa-shopping-cart"></i> <span class="btn-text">购物车</span>
                     </button>
                     <button class="btn btn-outline">
-                        <i class="fas fa-user"></i> 登录
+                        <i class="fas fa-user"></i> <span class="btn-text">登录</span>
                     </button>
                 </div>
+                <button class="mobile-menu-btn" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
@@ -49,7 +54,7 @@
                     </p>
                     <div class="hero-buttons">
                         <button class="btn btn-large btn-primary">
-                            <i class="fas fa-search"></i> 浏览商品
+                            <i class="fas fa-shopping-bag"></i> 浏览商品
                         </button>
                         <button class="btn btn-large btn-outline">
                             <i class="fas fa-users"></i> 了解手工艺人
@@ -80,55 +85,147 @@
             </div>
             <div class="artisans-grid">
                 <div class="artisan-card">
-                    <div class="artisan-avatar"></div>
+                    <div class="artisan-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="穆罕默德·阿里" />
+                    </div>
                     <div class="artisan-info">
-                        <h3 class="artisan-name">穆罕默德·阿里</h3>
-                        <p class="artisan-craft">地毯编织大师</p>
-                        <p class="artisan-location">
-                            <i class="fas fa-map-marker-alt"></i> 马拉喀什
-                        </p>
+                        <div class="artisan-title-row">
+                            <h3 class="artisan-name">穆罕默德·阿里</h3>
+                            <p class="artisan-craft">地毯编织大师</p>
+                        </div>
+                        <div class="artisan-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-score">5.0</span>
+                        </div>
+                        <div class="artisan-info-row">
+                            <span class="info-item">
+                                <i class="fas fa-map-marker-alt"></i> 马拉喀什
+                            </span>
+                            <span class="info-item">
+                                <i class="fas fa-clock"></i> 25年
+                            </span>
+                            <span class="info-item">
+                                <i class="fas fa-box"></i> <strong>156</strong> 作品
+                            </span>
+                        </div>
+                        <p class="artisan-description">传承三代的地毯编织技艺，擅长制作传统柏柏尔图案地毯</p>
                         <button class="btn btn-sm btn-primary">
                             <i class="fas fa-eye"></i> 查看作品
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="artisan-card">
-                    <div class="artisan-avatar"></div>
+                    <div class="artisan-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="法蒂玛·扎赫拉" />
+                    </div>
                     <div class="artisan-info">
-                        <h3 class="artisan-name">法蒂玛·扎赫拉</h3>
-                        <p class="artisan-craft">陶瓷艺术家</p>
-                        <p class="artisan-location">
-                            <i class="fas fa-map-marker-alt"></i> 菲斯
-                        </p>
+                        <div class="artisan-title-row">
+                            <h3 class="artisan-name">法蒂玛·扎赫拉</h3>
+                            <p class="artisan-craft">陶瓷艺术家</p>
+                        </div>
+                        <div class="artisan-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-score">4.8</span>
+                        </div>
+                        <div class="artisan-info-row">
+                            <span class="info-item">
+                                <i class="fas fa-map-marker-alt"></i> 菲斯
+                            </span>
+                            <span class="info-item">
+                                <i class="fas fa-clock"></i> 18年
+                            </span>
+                            <span class="info-item">
+                                <i class="fas fa-box"></i> <strong>203</strong> 作品
+                            </span>
+                        </div>
+                        <p class="artisan-description">菲斯传统陶瓷工艺传承人，作品融合传统与现代设计</p>
                         <button class="btn btn-sm btn-primary">
                             <i class="fas fa-eye"></i> 查看作品
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="artisan-card">
-                    <div class="artisan-avatar"></div>
+                    <div class="artisan-avatar">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop" alt="哈桑·本·赛义德" />
+                    </div>
                     <div class="artisan-info">
-                        <h3 class="artisan-name">哈桑·本·赛义德</h3>
-                        <p class="artisan-craft">金属工艺师</p>
-                        <p class="artisan-location">
-                            <i class="fas fa-map-marker-alt"></i> 拉巴特
-                        </p>
+                        <div class="artisan-title-row">
+                            <h3 class="artisan-name">哈桑·本·赛义德</h3>
+                            <p class="artisan-craft">金属工艺师</p>
+                        </div>
+                        <div class="artisan-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-score">4.9</span>
+                        </div>
+                        <div class="artisan-info-row">
+                            <span class="info-item">
+                                <i class="fas fa-map-marker-alt"></i> 拉巴特
+                            </span>
+                            <span class="info-item">
+                                <i class="fas fa-clock"></i> 30年
+                            </span>
+                            <span class="info-item">
+                                <i class="fas fa-box"></i> <strong>124</strong> 作品
+                            </span>
+                        </div>
+                        <p class="artisan-description">精通传统铜制工艺，擅长制作精美的茶具和装饰品</p>
                         <button class="btn btn-sm btn-primary">
                             <i class="fas fa-eye"></i> 查看作品
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="artisan-card">
-                    <div class="artisan-avatar"></div>
+                    <div class="artisan-avatar">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="阿伊莎·哈米德" />
+                    </div>
                     <div class="artisan-info">
-                        <h3 class="artisan-name">阿伊莎·哈米德</h3>
-                        <p class="artisan-craft">刺绣艺术家</p>
-                        <p class="artisan-location">
-                            <i class="fas fa-map-marker-alt"></i> 丹吉尔
-                        </p>
+                        <div class="artisan-title-row">
+                            <h3 class="artisan-name">阿伊莎·哈米德</h3>
+                            <p class="artisan-craft">刺绣艺术家</p>
+                        </div>
+                        <div class="artisan-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-score">4.7</span>
+                        </div>
+                        <div class="artisan-info-row">
+                            <span class="info-item">
+                                <i class="fas fa-map-marker-alt"></i> 丹吉尔
+                            </span>
+                            <span class="info-item">
+                                <i class="fas fa-clock"></i> 15年
+                            </span>
+                            <span class="info-item">
+                                <i class="fas fa-box"></i> <strong>189</strong> 作品
+                            </span>
+                        </div>
+                        <p class="artisan-description">传统刺绣技艺的现代诠释者，作品色彩丰富，图案精美</p>
                         <button class="btn btn-sm btn-primary">
                             <i class="fas fa-eye"></i> 查看作品
                         </button>
@@ -151,7 +248,9 @@
             </div>
             <div class="crafts-grid">
                 <div class="craft-card">
-                    <div class="craft-image"></div>
+                    <div class="craft-image">
+                        <img src="https://img1.baidu.com/it/u=5582902,568582371&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667" alt="柏柏尔地毯" />
+                    </div>
                     <div class="craft-info">
                         <h3 class="craft-name">柏柏尔地毯</h3>
                         <p class="craft-price">¥1,899</p>
@@ -163,14 +262,16 @@
                                 <i class="fas fa-shopping-cart"></i> 加入购物车
                             </button>
                             <button class="btn btn-sm btn-outline">
-                                <i class="fas fa-heart"></i> 收藏
+                                <i class="fa-regular fa-heart"></i> 收藏
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="craft-card">
-                    <div class="craft-image"></div>
+                    <div class="craft-image">
+                        <img src="https://img0.baidu.com/it/u=788166913,1594878049&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750" alt="菲斯陶瓷盘" />
+                    </div>
                     <div class="craft-info">
                         <h3 class="craft-name">菲斯陶瓷盘</h3>
                         <p class="craft-price">¥399</p>
@@ -182,14 +283,16 @@
                                 <i class="fas fa-shopping-cart"></i> 加入购物车
                             </button>
                             <button class="btn btn-sm btn-outline">
-                                <i class="fas fa-heart"></i> 收藏
+                                <i class="fa-regular fa-heart"></i> 收藏
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="craft-card">
-                    <div class="craft-image"></div>
+                    <div class="craft-image">
+                        <img src="https://t9.baidu.com/it/u=3814603019,614171039&fm=193" alt="铜制茶具" />
+                    </div>
                     <div class="craft-info">
                         <h3 class="craft-name">铜制茶具</h3>
                         <p class="craft-price">¥799</p>
@@ -201,14 +304,16 @@
                                 <i class="fas fa-shopping-cart"></i> 加入购物车
                             </button>
                             <button class="btn btn-sm btn-outline">
-                                <i class="fas fa-heart"></i> 收藏
+                                <i class="fa-regular fa-heart"></i> 收藏
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="craft-card">
-                    <div class="craft-image"></div>
+                    <div class="craft-image">
+                        <img src="https://t15.baidu.com/it/u=288924277,3039711348&fm=224&app=112&f=JPEG?w=500&h=500" alt="刺绣抱枕" />
+                    </div>
                     <div class="craft-info">
                         <h3 class="craft-name">刺绣抱枕</h3>
                         <p class="craft-price">¥299</p>
@@ -220,7 +325,7 @@
                                 <i class="fas fa-shopping-cart"></i> 加入购物车
                             </button>
                             <button class="btn btn-sm btn-outline">
-                                <i class="fas fa-heart"></i> 收藏
+                                <i class="fa-regular fa-heart"></i> 收藏
                             </button>
                         </div>
                     </div>
@@ -259,7 +364,9 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="about-visual"></div>
+                    <div class="about-visual">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="摩洛哥手工艺文化" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -278,13 +385,14 @@
                         连接摩洛哥手工艺人与全球买家的桥梁
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <!-- 社交链接占位符：实际部署时需替换为真实链接 -->
+                        <a href="https://www.facebook.com/moroccocrafts" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/moroccocrafts" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/moroccocrafts" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/moroccocrafts" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4 class="footer-title">快速链接</h4>
                     <ul class="footer-links">
@@ -294,17 +402,18 @@
                         <li><a href="#about">关于我们</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4 class="footer-title">客户服务</h4>
                     <ul class="footer-links">
-                        <li><a href="#">购物指南</a></li>
-                        <li><a href="#">配送信息</a></li>
-                        <li><a href="#">退换政策</a></li>
-                        <li><a href="#">常见问题</a></li>
+                        <!-- 客户服务链接占位符：实际部署时需创建对应页面 -->
+                        <li><a href="#shopping-guide" class="footer-link">购物指南</a></li>
+                        <li><a href="#shipping-info" class="footer-link">配送信息</a></li>
+                        <li><a href="#return-policy" class="footer-link">退换政策</a></li>
+                        <li><a href="#faq" class="footer-link">常见问题</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4 class="footer-title">联系我们</h4>
                     <div class="contact-info">
@@ -328,6 +437,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Element Plus Style Message Container -->
+    <div id="message-container"></div>
 
     <script src="src/scripts/main.js"></script>
 </body>

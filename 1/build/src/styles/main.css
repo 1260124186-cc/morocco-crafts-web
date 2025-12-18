@@ -118,7 +118,7 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #f8f5f0 0%, #e8d8c0 100%);
-    padding: 120px 0 80px;
+    padding: 80px 0 80px;
     margin-top: 70px;
 }
 
@@ -504,25 +504,25 @@ body {
     .nav {
         display: none;
     }
-    
+
     .hero-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .hero-title {
         font-size: 2.5rem !important;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
     }
-    
+
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
