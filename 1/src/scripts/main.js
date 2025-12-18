@@ -117,16 +117,36 @@ if (mobileMenuBtn) {
 }
 
 // Hero buttons functionality
-document.querySelectorAll('.hero-buttons .btn').forEach(button => {
-    button.addEventListener('click', function() {
-        const text = this.textContent.trim();
-        if (text.includes('浏览商品')) {
-            document.querySelector('#crafts').scrollIntoView({ behavior: 'smooth' });
-        } else if (text.includes('了解手工艺人')) {
-            document.querySelector('#artisans').scrollIntoView({ behavior: 'smooth' });
+const browseProductsBtn = document.querySelector('.hero-buttons .btn-primary');
+const learnArtisansBtn = document.querySelector('.hero-buttons .btn-outline');
+
+if (browseProductsBtn) {
+    browseProductsBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const craftsSection = document.querySelector('#crafts');
+        if (craftsSection) {
+            const offsetTop = craftsSection.offsetTop - 70; // Account for fixed header
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
         }
     });
-});
+}
+
+if (learnArtisansBtn) {
+    learnArtisansBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const artisansSection = document.querySelector('#artisans');
+        if (artisansSection) {
+            const offsetTop = artisansSection.offsetTop - 70; // Account for fixed header
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+}
 
 // Artisan card "查看作品" button functionality
 document.querySelectorAll('.artisan-card .btn-primary').forEach(button => {
