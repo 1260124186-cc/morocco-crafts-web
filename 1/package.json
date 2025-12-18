@@ -5,13 +5,9 @@
   "main": "index.html",
   "scripts": {
     "dev": "python3 -m http.server 8000",
-    "build": "mkdir -p build && cp -r index.html src public build/",
-    "test": "npx playwright test"
+    "build": "mkdir -p build && cp -r index.html src public build/"
   },
   "keywords": ["morocco", "crafts", "artisans", "ecommerce"],
   "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@playwright/test": "^1.41.0"
-  }
+  "license": "MIT"
 }
