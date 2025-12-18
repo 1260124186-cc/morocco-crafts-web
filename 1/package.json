@@ -1,0 +1,17 @@
+{
+  "name": "morocco-crafts-web",
+  "version": "1.0.0",
+  "description": "A cross-platform web app connecting Moroccan artisans with global buyers",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "mkdir -p build && cp -r index.html src public build/",
+    "test": "npx playwright test"
+  },
+  "keywords": ["morocco", "crafts", "artisans", "ecommerce"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.41.0"
+  }
+}
